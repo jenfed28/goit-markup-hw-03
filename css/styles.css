@@ -6,9 +6,23 @@ body {
   color: #434455;
   background-color: #fff;
 }
+
+/*reset*/
+
 ul,
 ol {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
 }
 
 a {
@@ -16,6 +30,30 @@ a {
   color: inherit;
 }
 
+/*comon */
+
+.container {
+  max-width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/*header*/
+
+.page-header {
+  border-bottom: 1px solid #e7e9fc;
+  padding-block: 24px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -26,11 +64,24 @@ a {
   color: #4d5ae5;
 }
 
+.header-logo {
+  padding: 24px 0;
+  margin-right: 76px;
+}
+
 .header-logo .logo-part {
   color: #2e2f42;
 }
 
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
 .nav-link {
+  padding: 24px 0;
+  display: block;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -40,9 +91,18 @@ a {
 
 .contacts {
   font-style: normal;
+  margin-left: auto;
+}
+
+.contacts-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
 }
 
 .contacts-link {
+  display: block;
+  padding: 24px 0;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -58,6 +118,8 @@ a {
 
 .hero {
   background-color: #2e2f42;
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 
 .hero-title {
@@ -67,6 +129,9 @@ a {
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
+  max-width: 496px;
+  margin: 0 auto;
+  margin-bottom: 48px;
 }
 
 .hero-button {
@@ -77,6 +142,12 @@ a {
   color: #fff;
   background-color: #4d5ae5;
   cursor: pointer;
+  border-radius: 4px;
+  min-width: 169px;
+  padding: 16px 32px;
+  border: none;
+  display: block;
+  margin: 0 auto;
 }
 
 .hero-button:hover,
@@ -86,6 +157,7 @@ a {
 }
 
 .features {
+  padding-block: 120px;
 }
 
 .features-title {
@@ -95,12 +167,16 @@ a {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+  margin-bottom: 72px;
 }
 
 .features-list {
+  display: flex;
+  gap: 24px;
 }
 
 .features-item {
+  width: calc((100% - 24px * 3) / 4);
 }
 
 .features-subtitle {
@@ -109,6 +185,7 @@ a {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  padding-bottom: 8px;
 }
 
 .features-item-text {
@@ -120,6 +197,7 @@ a {
 
 .team {
   background-color: #f4f4fd;
+  padding-block: 120px;
 }
 
 .team-title {
@@ -129,16 +207,22 @@ a {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+  padding-bottom: 72px;
 }
 
 .team-list {
+  display: flex;
+  gap: 24px;
 }
 
 .team-item {
   background-color: #fff;
+  border-radius: 0 0 4px 4px;
+  width: calc((100% - 24px * 3) / 4);
 }
 
 .team-image {
+  padding-bottom: 32px;
 }
 
 .team-subtitle {
@@ -148,6 +232,7 @@ a {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+  padding-bottom: 8px;
 }
 
 .team-item-text {
@@ -156,9 +241,11 @@ a {
   letter-spacing: 0.02em;
   text-align: center;
   color: #434455;
+  padding-bottom: 32px;
 }
 
 .portfolio {
+  padding-block: 120px;
 }
 
 .portfolio-title {
@@ -168,13 +255,20 @@ a {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+  padding-bottom: 72px;
 }
 
 .portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
 }
 .portfolio-item {
+  width: calc((100% - 24px * 2) / 3);
+  border: 1px solid #e7e9fc;
 }
 .portfolio-image {
+  padding-bottom: 32px;
 }
 .portfolio-subtitle {
   font-weight: 500;
@@ -182,24 +276,43 @@ a {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  padding-bottom: 8px;
 }
 .portfolio-item-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  padding-bottom: 32px;
 }
 
 .footer {
   background-color: #2e2f42;
+  padding-block: 100px;
 }
 .footer-link .logo-part-footer {
   color: #f4f4fd;
 }
-
+.logo-part-footer {
+}
 .footer-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+}
+.logo .footer-link {
+  padding-top: 100px;
+}
+
+.footer-text {
+  max-width: 264px;
+  margin-bottom: 100px;
+  padding-top: 16px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
