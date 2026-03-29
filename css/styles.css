@@ -42,7 +42,6 @@ a {
 
 .page-header {
   border-bottom: 1px solid #e7e9fc;
-  padding-block: 24px;
 }
 
 .header-container {
@@ -266,6 +265,7 @@ a {
 .portfolio-item {
   width: calc((100% - 24px * 2) / 3);
   border: 1px solid #e7e9fc;
+  border-top: none;
 }
 .portfolio-image {
   padding-bottom: 32px;
@@ -302,13 +302,16 @@ a {
   color: #f4f4fd;
 }
 .logo .footer-link {
-  padding-top: 100px;
+}
+.logo {
+  display: inline block;
+}
+.footer-link {
+  padding: 16px 0;
 }
 
 .footer-text {
   max-width: 264px;
-  margin-bottom: 100px;
-  padding-top: 16px;
 }
 
 img {
