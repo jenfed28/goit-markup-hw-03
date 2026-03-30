@@ -320,9 +320,9 @@ a {
 }
 .logo {
   display: block;
-  padding-bottom: 16px;
 }
 .footer-link {
+  padding: 16px 0;
 }
 
 .footer-text {
